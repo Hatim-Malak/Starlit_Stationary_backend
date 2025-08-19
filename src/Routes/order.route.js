@@ -1,7 +1,7 @@
 import express from "express"
 import {placeOrder,specificOrder,myOrder,allOrders,verifyOTP,cancelOrder} from "../Controllers/order.controller.js"
 import {protectRoute} from "../Middleware/auth.middleware.js"
-import {isAdmin} from "../Middleware/admin.Middleware.js"
+import {isAdmin} from "../Middleware/admin.middleware.js"
 import {validateDistance} from "../lib/map.js"
 
 const router = express.Router();
